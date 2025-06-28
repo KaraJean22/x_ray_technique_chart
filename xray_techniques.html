@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Radiographic Technique Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    details {
+      margin: 10px 0;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px 15px;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+    th, td {
+      padding: 8px 6px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background: #eee;
+      font-weight: 600;
+    }
+    tr:hover {
+      background: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Radiographic Technique Guide</h1>
+  <input type="text" id="searchInput" placeholder="Search by part or view..." onkeyup="filterTable()">
+
+  <!-- Chest / Abdomen -->
+  <details open>
+    <summary>Chest / Abdomen</summary>
+    <table>
+      <thead>
+        <tr><th>Part</th><th>kVp</th><th>mAs</th><th>MA</th><th>Sec</th><th>Bucky/TT</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CHEST AP/PA</td><td>110</td><td>10</td><td></td><td></td><td>B</td></tr>
+        <tr><td>CHEST LAT</td><td>120</td><td>16</td><td></td><td></td><td>B</td></tr>
+        <tr><td>CHEST RAO/LAO</td><td>110</td><td>10</td><td></td><td></td><td>B</td></tr>
+        <tr><td>DECUB CHEST</td><td>110</td><td>10</td><td></td><td></td><td>B</td></tr>
+        <tr><td>LORDOTIC CHEST</td><td>110</td><td>10</td><td></td><td></td><td>B</td></tr>
+        <tr><td>STERNUM RAO</td><td>65</td><td>50</td><td>25</td><td>2</td><td>B</td></tr>
+        <tr><td>STERNUM LATERAL</td><td>75</td><td>50</td><td></td><td></td><td>B</td></tr>
+        <tr><td>RIB AP/OBL</td><td>70</td><td>32</td><td></td><td></td><td>B</td></tr>
+        <tr><td>ABD/KUB</td><td>75</td><td>50/63</td><td></td><td></td><td>B</td></tr>
+        <tr><td>ABD DECUB</td><td>80</td><td>40</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>ABD LAT</td><td>80</td><td>40</td><td></td><td></td><td>B</td></tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- Skull / Facial Bones -->
+  <details>
+    <summary>Skull / Facial Bones</summary>
+    <table>
+      <thead>
+        <tr><th>Part</th><th>kVp</th><th>mAs</th><th>MA</th><th>Sec</th><th>Bucky/TT</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>PA</td><td>70</td><td>40</td><td></td><td></td><td>B</td></tr>
+        <tr><td>TOWNES</td><td>70</td><td>40</td><td></td><td></td><td>B</td></tr>
+        <tr><td>WATERS</td><td>70</td><td>40</td><td></td><td></td><td>B</td></tr>
+        <tr><td>SKULL LAT</td><td>65</td><td>20</td><td></td><td></td><td>B</td></tr>
+        <tr><td>FACIAL LAT</td><td>65</td><td>20</td><td></td><td></td><td>B</td></tr>
+        <tr><td>ZYGOMATIC ARCH</td><td>65</td><td>32</td><td></td><td></td><td>B</td></tr>
+        <tr><td>SINUS AP/SMV</td><td>80</td><td>50</td><td></td><td></td><td>B</td></tr>
+        <tr><td>SINUS LAT</td><td>60</td><td>20</td><td></td><td></td><td>B</td></tr>
+        <tr><td>TMJ LAT</td><td>66</td><td>20</td><td></td><td></td><td>B</td></tr>
+        <tr><td>NASAL LAT</td><td>50</td><td>2.5</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>MANDIBLE PA</td><td>68</td><td>32</td><td></td><td></td><td>B</td></tr>
+        <tr><td>MANDIBLE LAT</td><td>68</td><td>32</td><td></td><td></td><td>B</td></tr>
+        <tr><td>MANDIBLE OBL</td><td>66</td><td>16</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>ORBIT/REECE</td><td>70</td><td>40</td><td></td><td></td><td>B</td></tr>
+        <tr><td>ORBIT LAT</td><td>64</td><td>32</td><td></td><td></td><td>B</td></tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- Spines -->
+  <details>
+    <summary>Spines</summary>
+    <table>
+      <thead>
+        <tr><th>Part</th><th>kVp</th><th>mAs</th><th>MA</th><th>Sec</th><th>Bucky/TT</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CERVICAL AP/OBL</td><td>75</td><td>16</td><td></td><td></td><td>B</td></tr>
+        <tr><td>CERVICAL LAT</td><td>80</td><td>32</td><td></td><td></td><td>B</td></tr>
+        <tr><td>CERVICAL SWIMMER</td><td>84</td><td>100</td><td></td><td></td><td>B</td></tr>
+        <tr><td>CERVICAL X TABLE</td><td>80</td><td>6.3</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>CERVICAL ST</td><td>60</td><td>16</td><td></td><td></td><td>B</td></tr>
+        <tr><td>THORACIC AP</td><td>75</td><td>50</td><td></td><td></td><td>B</td></tr>
+        <tr><td>THORACIC LAT</td><td>75</td><td>100</td><td></td><td></td><td>B</td></tr>
+        <tr><td>THORACIC LAT BREATH</td><td>76</td><td>40</td><td>40</td><td>1</td><td>B</td></tr>
+        <tr><td>LUMBAR AP/OBL</td><td>75</td><td>40</td><td></td><td></td><td>B</td></tr>
+        <tr><td>LUMBAR LAT</td><td>85</td><td>100</td><td></td><td></td><td>B</td></tr>
+        <tr><td>LUMBAR SPOT</td><td>90</td><td>100</td><td></td><td></td><td>B</td></tr>
+        <tr><td>SACRUM AP</td><td>75</td><td>40</td><td></td><td></td><td>B</td></tr>
+        <tr><td>COCCYX AP</td><td>75</td><td>32</td><td></td><td></td><td>B</td></tr>
+        <tr><td>SACRUM/COCCYX LAT</td><td>85</td><td>80</td><td></td><td></td><td>B</td></tr>
+        <tr><td>SI JOINTS</td><td>75</td><td>40</td><td></td><td></td><td>B</td></tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- Lower Extremity -->
+  <details>
+    <summary>Lower Extremity</summary>
+    <table>
+      <thead>
+        <tr><th>Part</th><th>kVp</th><th>mAs</th><th>MA</th><th>Sec</th><th>Bucky/TT</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>PELVIS AP/FROG</td><td>70</td><td>40</td><td></td><td></td><td>B</td></tr>
+        <tr><td>HIP AP/LAT</td><td>70</td><td>40</td><td></td><td></td><td>B</td></tr>
+        <tr><td>HIP SHOOT THROUGH</td><td>80</td><td>63</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>FEMUR AP</td><td>70</td><td>32</td><td></td><td></td><td>B</td></tr>
+        <tr><td>FEMUR LAT</td><td>70</td><td>40</td><td></td><td></td><td>B</td></tr>
+        <tr><td>KNEE AP/LAT/OBL</td><td>65</td><td>2</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>PATELLA AP/LAT sunrise</td><td>73</td><td>5</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>KNEE TUNNEL</td><td>70</td><td>16</td><td></td><td></td><td>B</td></tr>
+        <tr><td>TIB/FIB</td><td>65</td><td>8</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>ANKLE AP/OBL</td><td>60</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>ANKLE LAT</td><td>65</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>FOOT AP/OBL</td><td>48</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>FOOT LAT</td><td>55</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>TOE</td><td>45</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>OS CAL TANGENTIAL</td><td>60</td><td>5</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>OS CAL LAT</td><td>65</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+      </tbody>
+    </table>
+  </details>
+
+  <!-- Upper Extremity -->
+  <details>
+    <summary>Upper Extremity</summary>
+    <table>
+      <thead>
+        <tr><th>Part</th><th>kVp</th><th>mAs</th><th>MA</th><th>Sec</th><th>Bucky/TT</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>SHOULDER AP</td><td>70</td><td>20</td><td></td><td></td><td>B</td></tr>
+        <tr><td>SCAPULA AP</td><td>70</td><td>20</td><td></td><td></td><td>B</td></tr>
+        <tr><td>SCAPULA LAT</td><td>75</td><td>32</td><td></td><td></td><td>B</td></tr>
+        <tr><td>CLAVICLE AP/AXIAL</td><td>65</td><td>20</td><td></td><td></td><td>B</td></tr>
+        <tr><td>AC JOINT</td><td>70</td><td>16</td><td></td><td></td><td>B</td></tr>
+        <tr><td>SC JOINT</td><td>70</td><td>25</td><td></td><td></td><td>B</td></tr>
+        <tr><td>HUMERUS (Bucky)</td><td>90</td><td>10</td><td></td><td></td><td>B</td></tr>
+        <tr><td>HUMERUS (Table Top)</td><td>65</td><td>6.3</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>ELBOW AP/OBL/LAT</td><td>55</td><td>4</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>FOREARM</td><td>55</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>WRIST</td><td>50</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>HAND AP/OBL</td><td>50</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>HAND LAT</td><td>55</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+        <tr><td>FINGER</td><td>44</td><td>3.2</td><td></td><td></td><td>TT</td></tr>
+      </tbody>
+    </table>
+  </details>
+
+<script>
+function filterTable() {
+  const input = document.getElementById("searchInput").value.toUpperCase();
+  const details = document.querySelectorAll("details");
+  details.forEach(section => {
+    const rows = section.querySelectorAll("tbody tr");
+    let visibleCount = 0;
+    rows.forEach(row => {
+      const text = row.textContent.toUpperCase();
+      if(text.includes(input)) {
+        row.style.display = "";
+        visibleCount++;
+      } else {
+        row.style.display = "none";
+      }
+    });
+    // Auto open section if any rows visible
+    section.open = visibleCount > 0;
+  });
+}
+</script>
+
+</body>
+</html>
